@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: splitio
+
+splitio:
+  features:
+    segments:
+      filepath: src/main/resources/splitio/segments.json
+
+logging:
+  register-shutdown-hook:
+
+server:
+  jetty:
+    accesslog:
+      retention-period:

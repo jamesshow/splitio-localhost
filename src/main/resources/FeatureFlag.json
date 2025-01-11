@@ -1,0 +1,34 @@
+{
+  "splits": [
+    {
+      "name": "new_user_experience",
+      "trafficType": "user",
+      "enabled": true,
+      "treatments": [
+        {
+          "name": "on",
+          "config": "{\"welcomeMessage\": \"Welcome to the new experience!\"}"
+        },
+        {
+          "name": "off",
+          "config": "{\"welcomeMessage\": \"Welcome!\"}"
+        }
+      ]
+    },
+    {
+      "name": "dark_mode",
+      "trafficType": "user",
+      "enabled": true,
+      "treatments": [
+        {
+          "name": "on",
+          "config": "{\"theme\": \"dark\"}"
+        },
+        {
+          "name": "off",
+          "config": "{\"theme\": \"light\"}"
+        }
+      ]
+    }
+  ]
+}
