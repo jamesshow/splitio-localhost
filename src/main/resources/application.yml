@@ -2,10 +2,8 @@ spring:
   application:
     name: splitio
 
-splitio:
-  features:
-    segments:
-      filepath: src/main/resources/splitio/segments.json
+split:
+  json-file: split-feature.json
 
 logging:
   register-shutdown-hook:
